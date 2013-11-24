@@ -20,17 +20,17 @@
 # definition file).
 #
 
-# Inherit from common serrano
--include device/samsung/serrano-common/BoardConfigCommon.mk
+# Inherit from common lt02lte
+-include device/samsung/lt02lte-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/serranoltexx/BoardConfigVendor.mk
+-include vendor/samsung/lt02ltespr/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := serranolte,serranoltexx,i9195,GT-I9195
+TARGET_OTA_ASSERT_DEVICE := lt02ltespr
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_lte_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
 # NFC
 BOARD_HAVE_NFC := true
