@@ -30,7 +30,7 @@
 TARGET_OTA_ASSERT_DEVICE := lt02ltespr
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := cyanogen_lt02ltespr_defconfig
 
 # NFC
 BOARD_HAVE_NFC := true
