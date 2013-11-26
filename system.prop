@@ -1,8 +1,66 @@
-# system.prop for serranoltexx
+# system.prop for lt02ltespr
 #
 
-# cannot take spaces
+# 8930 / 8960 RIL Basic
+rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
 
-telephony.lteOnGsmDevice=1
-ro.telephony.default_network=9
+# VoLTE/IMS
+persist.radio.calls.on.ims=true
+persist.radio.jbims=1
+
+# Use CDMALTE Phone
+telephony.lteOnCdmaDevice=1
+
+# VoLTE/IMS
+persist.radio.calls.on.ims=true
+persist.radio.jbims=1
+
+# Use CDMALTE Phone
+telephony.lteOnCdmaDevice=1
+
+# Enable time services daemon
+persist.timed.enable=true
+
+# Keep SIM state on LPM mode
+persist.radio.apm_sim_not_pwdn=1
+
+# Don't wait the card state for RADIO POWER request
+persist.radio.no_wait_for_card=1
+
+# For sys info indication
+persist.radio.add_power_save=1
+
+# Snapshot Setting
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22
+
+# Control EONS (true = EONS enabled, false = EONS disabled)
+persist.eons.enabled=false
+
+# Data modules
+ro.use_data_netmgrd=true
+
+# Use CP SE13 Table
+persist.radio.use_se_table_only=1
+
+# Default ECCList (SPR Non-Global Mode project)
+ro.ril.ecclist=911,#911,*911
+
+# Use data service state for signal display (Except SPR / USC / BST / VMU / CRI CS devices. PS ONLY devices use this property)
+ro.config.combined_signal=true
+
+# Chameleon Default Operator (SPR with Chameleon)
+ro.cdma.default_numeric=310000
+ro.cdma.default_alpha=Chameleon
